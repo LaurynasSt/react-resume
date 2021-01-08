@@ -1,0 +1,15 @@
+.line {
+    height: 1px;
+    background-color: silver;
+    position: relative;
+    margin: 10px 0;
+  }
+  
+  .line-on {
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 10px;
+    background-color: #7ABCAC;
+    position: absolute;
+    width: 100px;
+  }

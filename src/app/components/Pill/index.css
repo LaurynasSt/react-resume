@@ -1,0 +1,29 @@
+.skill {
+    margin-top: 15px;
+  }
+  
+  .skill > span {
+    font-size: 13px;
+  }
+  
+  .pill-green {
+    background-color: #7ABCAC;
+    font-weight: bold;
+    padding: 3px;
+    border-radius: 15px;
+  }
+  
+  .pill-yellow {
+    background-color: #D8DA79;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 3px;
+    border-radius: 15px;
+  }
+  
+  .pill-brown {
+    background-color: #C29486;
+    font-weight: bold;
+    padding: 3px;
+    border-radius: 15px;
+  }
