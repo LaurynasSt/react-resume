@@ -1,15 +1,19 @@
-.line {
-    height: 1px;
-    background-color: silver;
-    position: relative;
-    margin: 10px 0;
-  }
-  
-  .line-on {
-    top: 50%;
-    transform: translate(0, -50%);
-    height: 10px;
-    background-color: #7ABCAC;
-    position: absolute;
-    width: 100px;
-  }
+.divider {
+  height: 4px;
+  background: silver;
+  border: none;
+  margin: 3px 0;
+  overflow: initial;
+  position: relative;
+}
+
+.divider--fancy:before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 10px;
+  width: 70px;
+  top: -3px;
+  border: none;
+  background: #7ABCAC;
+}

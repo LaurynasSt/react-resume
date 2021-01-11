@@ -1,11 +1,9 @@
-import './index.css';
+import "./index.css";
 
-function Divider() {
-    return (
-        <div className="line">
-            <div className="line-on"></div>
-        </div>
-    );
+function Divider({ isFancy }) {
+  const className = isFancy ? "divider--fancy" : "";
+
+  return <hr className={`divider ${className}`} />;
 }
 
 export default Divider;

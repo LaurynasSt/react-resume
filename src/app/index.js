@@ -1,18 +1,19 @@
 import './index.css';
 import Pill from './components/Pill';
 import ContentBlock from './components/ContentBlock';
+import Select from './components/Select';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <div className="App-header-line">
-          <form action="" method="POST">
-            <select name="" id="">
-              <option>Lithuanian</option>
-              <option>English</option>
-            </select>
-          </form>
+          <Select
+            options={[
+              { value: "en", children: "English" },
+              { value: "lt", children: "Lietuviu" },
+            ]}
+          />
         </div>
         <section className="App-title-container">
           <h1 className="App-person-title">Laurio Pasaka</h1>
