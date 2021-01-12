@@ -6,6 +6,7 @@ import Link from './components/Link';
 import JobExperience from './components/JobExperience';
 import List from './components/List';
 import FooterBlock from './components/FooterBlock';
+import Divider from './components/Divider';
 
 function App() {
   return (
@@ -73,7 +74,7 @@ function App() {
                 2009 - 2013<br />
                 Degree
               </p>
-            <div className="line-educ"></div>
+            <Divider isShort/>
             <p className="App-educ-inner-text">
               SCHOOL NAME<br />
                 2009 - 2013<br />
@@ -131,6 +132,7 @@ function App() {
             />
           </JobExperience>
         </ContentBlock>
+        <Divider/>
       </main>
       <footer className="App-footer-container">
         <FooterBlock

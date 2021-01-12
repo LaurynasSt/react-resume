@@ -9,15 +9,15 @@
   
 .App-experience-card {
     padding: 20px;
-    margin: 20px 0;
+    margin-top: 20px;
 }
   
 .App-experience-card:first-child {
-    border-right: 1px solid silver;
+    border-right: 4px solid silver;
 }
   
 .App-experience-card:last-child {
-    border-left: 1px solid silver;
+    border-left: 4px solid silver;
 }
   
 .App-occupation {

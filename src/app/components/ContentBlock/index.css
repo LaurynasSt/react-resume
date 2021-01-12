@@ -3,7 +3,6 @@
   }
 
 .App-experience-container {
-    border-bottom: 1px solid silver;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }

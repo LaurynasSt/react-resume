@@ -7,6 +7,10 @@
   position: relative;
 }
 
+.divider--short {
+  max-width: 70%;
+}
+
 .divider--fancy:before {
   content: "";
   display: block;
