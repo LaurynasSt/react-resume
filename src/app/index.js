@@ -132,6 +132,7 @@ function App() {
           </JobExperience>
         </ContentBlock>
       </main>
+      <footer className="App-footer-container">
         <FooterBlock
           title="ADDRESS"
         >
