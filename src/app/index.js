@@ -132,29 +132,6 @@ function App() {
           </JobExperience>
         </ContentBlock>
       </main>
-      <footer className="App-footer-container">
-        <div>
-          <h3 className="App-footer-title">ADDRESS</h3>
-          <p>Imaginary St. 52.<br />Vilnius, Narnia</p>
-        </div>
-        <div>
-          <h3 className="App-footer-title">CONTACT</h3>
-          <p>
-            <a className="App-contacts-link" href="tel:+37060000123">+37060000123</a>
-            <br />
-            <a className="App-contacts-link" href="mailto: faker@faker.com">faker@faker.com</a>
-          </p>
-        </div>
-        <div>
-          <h3 className="App-footer-title">SOCIAL</h3>
-          <p>
-            <a className="App-contacts-link" href="https://lt.linkedin.com/" target="_blank" rel="noreferrer">LINKEDIN/none</a>
-            <br />
-            <a className="App-contacts-link" href="https://twitter.com/?lang=en" target="_blank" rel="noreferrer">TWITER/none</a>
-          </p>
-        </div>
-      </footer>
-      <footer className="App-footer-container">
         <FooterBlock
           title="ADDRESS"
         >
