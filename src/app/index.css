@@ -109,26 +109,6 @@ h4 {
   width: 350px;
 }
 
-.App-link {
-  display: flex;
-  align-items: center;
-  margin: 5px 0;
-}
-
-.App-link > a {
-  text-decoration: none;
-  color: black;
-}
-
-img {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 30px;
-  width: 30px;
-  margin-right: 5px;
-  border-radius: 50%;
-}
 
 .App-educ-inner-text {
   font-weight: bold;
@@ -144,34 +124,6 @@ img {
 .App-skills {
   margin-top: 30px;
 }
-
-.App-job-title-container {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.App-job-company {
-  margin: 5px 0;
-}
-
-.App-experience-card {
-  padding: 20px;
-  margin: 20px 0;
-}
-
-.App-experience-card:first-child {
-  border-right: 1px solid silver;
-}
-
-.App-experience-card:last-child {
-  border-left: 1px solid silver;
-}
-
-.App-occupation {
-  margin: 20px;
-}
-
-
 
 
 .App-footer-container {

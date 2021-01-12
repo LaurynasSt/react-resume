@@ -2,6 +2,10 @@ import './index.css';
 import Pill from './components/Pill';
 import ContentBlock from './components/ContentBlock';
 import Select from './components/Select';
+import Link from './components/Link';
+import JobExperience from './components/JobExperience';
+import List from './components/List';
+import FooterBlock from './components/FooterBlock';
 
 function App() {
   return (
@@ -23,22 +27,38 @@ function App() {
       <main>
         <section className="App-links-about">
           <ContentBlock title="LINKS" className="App-links-ul">
-            <div className="App-link">
-              <img src="https://static.jopwell.com/organizationevent/fKM12af7a73b43884bf316ee670f94a30/LinkedIn-Logo.png" alt="linkedin" />
-              <a href="https://lt.linkedin.com/" target="_blank" rel="noreferrer">LINKEDIN/none</a>
-            </div>
-            <div className="App-link">
-              <img src="https://1000logos.net/wp-content/uploads/2017/06/Logo-Twitter.jpg" alt="TWITTER" />
-              <a href="https://twitter.com/?lang=en" target="_blank" rel="noreferrer">TWITTER/none</a>
-            </div>
-            <div className="App-link">
-              <img src="https://www.flaticon.com/svg/static/icons/svg/38/38401.svg" alt="GITHUB" />
-              <a href="https://github.com" target="_blank" rel="noreferrer">GITHUB/none</a>
-            </div>
-            <div className="App-link">
-              <img src="https://image.flaticon.com/icons/png/512/60/60736.png" alt="BLOG" />
-              <a href="http://pornhub.com" target="_blank" rel="noreferrer">BLOG/none</a>
-            </div>
+            <Link
+              image
+              imgSrc="https://static.jopwell.com/organizationevent/fKM12af7a73b43884bf316ee670f94a30/LinkedIn-Logo.png"
+              imgAlt="linkedin"
+              link="https://lt.linkedin.com/"
+            >
+              LINKEDIN/none
+            </Link>
+            <Link
+              image
+              imgSrc="https://1000logos.net/wp-content/uploads/2017/06/Logo-Twitter.jpg"
+              imgAlt="twitter"
+              link="https://twitter.com/?lang=en"
+            >
+              TWITTER/none
+            </Link>
+            <Link
+              image
+              imgSrc="https://www.flaticon.com/svg/static/icons/svg/38/38401.svg"
+              imgAlt="github"
+              link="https://github.com/"
+            >
+              GITHUB/orezdrah
+            </Link>
+            <Link
+              image
+              imgSrc="https://image.flaticon.com/icons/png/512/60/60736.png"
+              imgAlt="blog"
+              link="https://pornhub.com/"
+            >
+              LINKEDIN/none
+            </Link>
           </ContentBlock>
           <ContentBlock title="ABOUT ME">
             <p className="App-about-text">
@@ -74,71 +94,79 @@ function App() {
           </ContentBlock>
         </section>
         <ContentBlock title="WORK EXPERIENCE" className="App-experience-container">
-          <div className="App-experience-card">
-            <div className="App-job-title-container">
-              <h5 className="App-job-title">JOB POSITION</h5>
-              <p className="App-job-company">Company</p>
-              <p>2018 - present</p>
-            </div>
-            <p className="App-job-descr">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-            <ul className="App-occupation">
-              <li>Lorum Ipsum Dolor</li>
-              <li>Consectetur adipiscing elit</li>
-            </ul>
-          </div>
-          <div className="App-experience-card">
-            <div className="App-job-title-container">
-              <h5 className="App-job-title">JOB POSITION</h5>
-              <p className="App-job-company">Company</p>
-              <p>2018 - present</p>
-            </div>
-            <p className="App-job-descr">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-            <ul className="App-occupation">
-              <li>Lorum Ipsum Dolor</li>
-              <li>Consectetur adipiscing elit</li>
-            </ul>
-          </div>
-          <div className="App-experience-card">
-            <div className="App-job-title-container">
-              <h5 className="App-job-title">JOB POSITION</h5>
-              <p className="App-job-company">Company</p>
-              <p>2018 - present</p>
-            </div>
-            <p className="App-job-descr">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-            <ul className="App-occupation">
-              <li>Lorum Ipsum Dolor</li>
-              <li>Consectetur adipiscing elit</li>
-            </ul>
-          </div>
+          <JobExperience
+            title="JOB POSITION"
+            company="Company"
+            years="2018 - present"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          >
+            <List
+              list={[
+                "labas", "viso gero"
+              ]}
+            />
+          </JobExperience>
+          <JobExperience
+            title="JOB POSITION"
+            company="Company"
+            years="2018 - present"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          >
+            <List
+              list={[
+                "labas", "viso gero"
+              ]}
+            />
+          </JobExperience>
+          <JobExperience
+            title="JOB POSITION"
+            company="Company"
+            years="2018 - present"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          >
+            <List
+              list={[
+                "labas", "viso gero"
+              ]}
+            />
+          </JobExperience>
         </ContentBlock>
       </main>
       <footer className="App-footer-container">
-        <div>
-          <h3 className="App-footer-title">ADDRESS</h3>
-          <p>Imaginary St. 52.<br />Vilnius, Narnia</p>
-        </div>
-        <div>
-          <h3 className="App-footer-title">CONTACT</h3>
-          <p>
-            <a className="App-contacts-link" href="tel:+37060000123">+37060000123</a>
-            <br />
-            <a className="App-contacts-link" href="mailto: faker@faker.com">faker@faker.com</a>
-          </p>
-        </div>
-        <div>
-          <h3 className="App-footer-title">SOCIAL</h3>
-          <p>
-            <a className="App-contacts-link" href="https://lt.linkedin.com/" target="_blank" rel="noreferrer">LINKEDIN/none</a>
-            <br />
-            <a className="App-contacts-link" href="https://twitter.com/?lang=en" target="_blank" rel="noreferrer">TWITER/none</a>
-          </p>
-        </div>
+        <FooterBlock
+          title="ADDRESS"
+        >
+        Vilniaus g. 52. <br />
+        Vilnius, Lietuva
+        </FooterBlock>
+        <FooterBlock
+          title="CONTACT"
+        >
+        <Link
+        href="tel:86880884"
+        >
+        86880884
+        </Link>
+        <br />
+        <Link
+        href="tel:86880884"
+        >
+        orez@orez.orez
+        </Link>
+        </FooterBlock>
+        <FooterBlock
+          title="SOCIAL"
+        >
+        <Link link="https://linkedin.com/"
+        >
+          LINKEDIN/none
+        </Link>
+        <br />
+        <Link link="https://twitter.com/"
+        >
+          TWITTER/none
+        </Link>
+        </FooterBlock>
       </footer>
     </div>
   );

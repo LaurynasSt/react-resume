@@ -1,0 +1,25 @@
+.App-job-title-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+.App-job-company {
+    margin: 5px 0;
+}
+  
+.App-experience-card {
+    padding: 20px;
+    margin: 20px 0;
+}
+  
+.App-experience-card:first-child {
+    border-right: 1px solid silver;
+}
+  
+.App-experience-card:last-child {
+    border-left: 1px solid silver;
+}
+  
+.App-occupation {
+    margin: 20px;
+}  
