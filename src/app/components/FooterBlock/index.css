@@ -1,0 +1,4 @@
+.App-footer-text {
+    display: flex;
+    flex-direction: column;
+}

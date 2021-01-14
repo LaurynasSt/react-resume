@@ -7,13 +7,17 @@ import JobExperience from './components/JobExperience';
 import List from './components/List';
 import FooterBlock from './components/FooterBlock';
 import Divider from './components/Divider';
+import translations from './translations';
+import { Fragment, useState } from 'react';
 
 function App() {
+  const [lang, setLang] = useState("en");
+
   return (
     <div className="App">
       <header className="App-header">
         <div className="App-header-line">
-          <Select
+          <Select onChange={setLang}
             options={[
               { value: "en", children: "English" },
               { value: "lt", children: "Lietuviu" },
@@ -22,153 +26,81 @@ function App() {
         </div>
         <section className="App-title-container">
           <h1 className="App-person-title">Laurio Pasaka</h1>
-          <h3 className="App-person-prof">FAKER</h3>
+          <h3 className="App-person-prof">{translations[lang].profession}</h3>
         </section>
       </header>
       <main>
         <section className="App-links-about">
-          <ContentBlock title="LINKS" className="App-links-ul">
-            <Link
-              image
-              imgSrc="https://static.jopwell.com/organizationevent/fKM12af7a73b43884bf316ee670f94a30/LinkedIn-Logo.png"
-              imgAlt="linkedin"
-              link="https://lt.linkedin.com/"
-            >
-              LINKEDIN/none
-            </Link>
-            <Link
-              image
-              imgSrc="https://1000logos.net/wp-content/uploads/2017/06/Logo-Twitter.jpg"
-              imgAlt="twitter"
-              link="https://twitter.com/?lang=en"
-            >
-              TWITTER/none
-            </Link>
-            <Link
-              image
-              imgSrc="https://www.flaticon.com/svg/static/icons/svg/38/38401.svg"
-              imgAlt="github"
-              link="https://github.com/"
-            >
-              GITHUB/orezdrah
-            </Link>
-            <Link
-              image
-              imgSrc="https://image.flaticon.com/icons/png/512/60/60736.png"
-              imgAlt="blog"
-              link="https://pornhub.com/"
-            >
-              LINKEDIN/none
-            </Link>
+          <ContentBlock title={translations[lang].personalLinks.title} className="App-links-ul">
+            {translations.en.personalLinks.links.map(({ link, imgSrc, imgAlt, text }) => {
+              return <Link
+                imgSrc={imgSrc}
+                imgAlt={imgAlt}
+                link={link}
+              >
+                {text}
+              </Link>
+            })}
           </ContentBlock>
           <ContentBlock title="ABOUT ME">
             <p className="App-about-text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              {translations[lang].aboutMe}
             </p>
           </ContentBlock>
         </section>
         <section className="App-skills-section">
-          <ContentBlock title="EDUCATION" className="App-educ-container">
-            <p className="App-educ-inner-text">
-              SCHOOL NAME<br />
-                2009 - 2013<br />
-                Degree
-              </p>
-            <Divider isShort/>
-            <p className="App-educ-inner-text">
-              SCHOOL NAME<br />
-                2009 - 2013<br />
-                Degree
-              </p>
+          <ContentBlock title={translations[lang].education.educationTitle} className="App-skills">
+            {translations[lang].education.schools.map(({ schools, years, degree }, index, array) => {
+              return <Fragment>
+                <p className="App-educ-inner-text">
+                  {schools}<br />
+                  {years}<br />
+                  {degree}
+                </p>
+                {index !== array.length - 1 && <Divider isShort />}
+              </Fragment>
+            })}
           </ContentBlock>
-          <ContentBlock title="PERSONAL SKILLS" className="App-skills">
-            <Pill color="green">TEAMWORK</Pill>
-            <Pill color="yellow">ORGANIZATION</Pill>
-            <Pill color="brown">COMMUNICATION</Pill>
+          <ContentBlock title={translations[lang].personalSkills.title} className="App-skills">
+            {translations[lang].personalSkills.skills.map(({ text, level }) => {
+              return <Pill color={level}>{text}</Pill>
+            })}
           </ContentBlock>
-          <ContentBlock title="TECHNICAL SKILLS" className="App-skills">
-            <Pill color="green">HTML</Pill>
-            <Pill color="green">CSS/SCSS</Pill>
-            <Pill color="brown">PHP</Pill>
-            <Pill color="yellow">JAVASCRIPT</Pill>
-            <Pill color="yellow">REACT.JS</Pill>
+          <ContentBlock title={translations[lang].technicalSkills.title} className="App-skills">
+            {translations[lang].technicalSkills.skills.map(({ text, level }) => {
+              return <Pill color={level}>{text}</Pill>
+            })}
           </ContentBlock>
         </section>
-        <ContentBlock title="WORK EXPERIENCE" className="App-experience-container">
-          <JobExperience
-            title="JOB POSITION"
-            company="Company"
-            years="2018 - present"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-          >
-            <List
-              list={[
-                "labas", "viso gero"
-              ]}
-            />
-          </JobExperience>
-          <JobExperience
-            title="JOB POSITION"
-            company="Company"
-            years="2018 - present"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-          >
-            <List
-              list={[
-                "labas", "viso gero"
-              ]}
-            />
-          </JobExperience>
-          <JobExperience
-            title="JOB POSITION"
-            company="Company"
-            years="2018 - present"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-          >
-            <List
-              list={[
-                "labas", "viso gero"
-              ]}
-            />
-          </JobExperience>
+        <ContentBlock title={translations[lang].workExperience.title} className="App-experience-container">
+          {translations[lang].workExperience.work.map(({ title, company, years, description, workAchievments }) => {
+            return <JobExperience
+              title={title}
+              company={company}
+              years={years}
+              description={description}
+            >
+              <List
+                list={
+                  workAchievments
+                }
+              />
+            </JobExperience>
+          })}
         </ContentBlock>
-        <Divider/>
+        <Divider />
       </main>
       <footer className="App-footer-container">
-        <FooterBlock
-          title="ADDRESS"
-        >
-        Vilniaus g. 52. <br />
-        Vilnius, Lietuva
-        </FooterBlock>
-        <FooterBlock
-          title="CONTACT"
-        >
-        <Link
-        href="tel:86880884"
-        >
-        86880884
-        </Link>
-        <br />
-        <Link
-        href="mailto:orez@orez.com"
-        >
-        orez@orez.orez
-        </Link>
-        </FooterBlock>
-        <FooterBlock
-          title="SOCIAL"
-        >
-        <Link link="https://linkedin.com/"
-        >
-          LINKEDIN/none
-        </Link>
-        <br />
-        <Link link="https://twitter.com/"
-        >
-          TWITTER/none
-        </Link>
-        </FooterBlock>
+        {translations[lang].footer.map(({ title, items }) => {
+          return <FooterBlock title={title}>
+            {items.map(({ text, link }) => {
+              const Component = link ? Link : "p"
+              return (
+                <Component link={link}>{text}</Component>
+              );
+            })}
+          </FooterBlock>
+        })}
       </footer>
     </div>
   );
