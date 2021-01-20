@@ -1,11 +1,11 @@
 import './index.css';
+import Header from "./components/Header";
 import Pill from './components/Pill';
 import ContentBlock from './components/ContentBlock';
-import Select from './components/Select';
 import Link from './components/Link';
 import JobExperience from './components/JobExperience';
 import List from './components/List';
-import FooterBlock from './components/FooterBlock';
+import Footer from "./components/Footer";
 import Divider from './components/Divider';
 import translations from './translations';
 import { Fragment, useState } from 'react';
@@ -15,20 +15,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <div className="App-header-line">
-          <Select onChange={setLang}
-            options={[
-              { value: "en", children: "English" },
-              { value: "lt", children: "Lietuviu" },
-            ]}
-          />
-        </div>
-        <section className="App-title-container">
-          <h1 className="App-person-title">Laurio Pasaka</h1>
-          <h3 className="App-person-prof">{translations[lang].profession}</h3>
-        </section>
-      </header>
+      <Header lang={lang} setLang={setLang}></Header>
       <main>
         <section className="App-links-about">
           <ContentBlock title={translations[lang].personalLinks.title} className="App-links-ul">
@@ -90,18 +77,7 @@ function App() {
         </ContentBlock>
         <Divider />
       </main>
-      <footer className="App-footer-container">
-        {translations[lang].footer.map(({ title, items }) => {
-          return <FooterBlock title={title}>
-            {items.map(({ text, link }) => {
-              const Component = link ? Link : "p"
-              return (
-                <Component link={link}>{text}</Component>
-              );
-            })}
-          </FooterBlock>
-        })}
-      </footer>
+      <Footer lang={lang}></Footer>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 import './index.css';
 
-function FooterBlock({ children, title = "", topText = "", bottomText = ""}) {
+function FooterBlock({ children, title = ""}) {
     
     
     return (

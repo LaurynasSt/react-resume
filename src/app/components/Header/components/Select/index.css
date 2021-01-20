@@ -1,0 +1,9 @@
+select {
+    border: none;
+    outline: none;
+    padding: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
