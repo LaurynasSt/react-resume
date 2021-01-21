@@ -1,6 +1,8 @@
 import FooterBlock from "./components/FooterBlock";
 import Link from "../../components/Link";
+
 import translations from "../../translations";
+
 import "./index.css";
 
 

@@ -1,6 +1,8 @@
-import translations from "../../translations";
-import "./index.css";
 import Select from "./components/Select";
+
+import translations from "../../translations";
+
+import "./index.css";
 
 function Header({ lang, setLang }) {
 
