@@ -1,29 +1,36 @@
 .skill {
     margin-top: 15px;
-  }
-  
-  .skill > span {
+}
+
+.skill>span {
     font-size: 13px;
-  }
-  
-  .pill-green {
+}
+
+.pill-green {
     background-color: #7ABCAC;
     font-weight: bold;
     padding: 3px;
     border-radius: 15px;
-  }
-  
-  .pill-yellow {
+}
+
+.pill-yellow {
     background-color: #D8DA79;
     font-weight: bold;
     margin: 20px 0;
     padding: 3px;
     border-radius: 15px;
-  }
-  
-  .pill-brown {
+}
+
+.pill-brown {
     background-color: #C29486;
     font-weight: bold;
     padding: 3px;
     border-radius: 15px;
-  }
+}
+
+.pill-grey {
+    background-color: #a19d9c;
+    font-weight: bold;
+    padding: 3px;
+    border-radius: 15px;
+}
