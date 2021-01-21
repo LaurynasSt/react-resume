@@ -26,9 +26,9 @@ function Main({ lang }) {
             </Link>
           })}
         </ContentBlock>
-        <ContentBlock title="ABOUT ME">
+        <ContentBlock title={translations[lang].aboutMe.title}>
           <p className="App-about-text">
-            {translations[lang].aboutMe}
+            {translations[lang].aboutMe.text}
           </p>
         </ContentBlock>
       </section>

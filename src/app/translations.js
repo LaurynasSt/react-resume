@@ -12,7 +12,10 @@ export default {
 
             ]
         },
-        aboutMe: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        aboutMe: {
+            title: "ABOUT ME",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
         education: {
             educationTitle: "Education",
             schools: [
@@ -73,23 +76,23 @@ export default {
                 },
             ]
         },
-        footer:[
+        footer: [
             {
-                title: "ADRESS", 
+                title: "ADRESS",
                 items: [
-                   { text: "Vilniaus g. 52." },
-                   { text: "Vilnius, Lithuania" }
+                    { text: "Vilniaus g. 52." },
+                    { text: "Vilnius, Lithuania" }
                 ]
             },
             {
-                title: "CONTACTS", 
+                title: "CONTACTS",
                 items: [
-                   { link: "tel:+370600000000", text: "+370600000000" },
-                   { link: "mailto:orez@orez.com", text: "orez@orez.com" }
+                    { link: "tel:+370600000000", text: "+370600000000" },
+                    { link: "mailto:orez@orez.com", text: "orez@orez.com" }
                 ]
             },
             {
-                title: "SOCIAL", 
+                title: "SOCIAL",
                 items: [
                     { link: "https://linkedin.com/", text: "LINKEDIN/orezdrah" },
                     { link: "https://twitter.com/", text: "TWITTER/orezdrah" }
@@ -109,7 +112,10 @@ export default {
 
             ]
         },
-        aboutMe: "LT Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        aboutMe: {
+            title: "APIE MANE",
+            text: "LT Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        },
         education: {
             educationTitle: "Education",
             schools: [
@@ -170,23 +176,23 @@ export default {
                 },
             ]
         },
-        footer:[
+        footer: [
             {
-                title: "ADRESAS", 
+                title: "ADRESAS",
                 items: [
-                   { text: "Vilniaus g. 52." },
-                   { text: "Vilnius, Lithuania" }
+                    { text: "Vilniaus g. 52." },
+                    { text: "Vilnius, Lithuania" }
                 ]
             },
             {
-                title: "KONTAKTAI", 
+                title: "KONTAKTAI",
                 items: [
-                   { link: "tel:+370600000000", text: "+370600000000" },
-                   { link: "mailto:orez@orez.com", text: "orez@orez.com" }
+                    { link: "tel:+370600000000", text: "+370600000000" },
+                    { link: "mailto:orez@orez.com", text: "orez@orez.com" }
                 ]
             },
             {
-                title: "SOCIALINIAI TINKLAI", 
+                title: "SOCIALINIAI TINKLAI",
                 items: [
                     { link: "https://linkedin.com/", text: "LINKEDIN/orezdrah" },
                     { link: "https://twitter.com/", text: "TWITTER/orezdrah" }
