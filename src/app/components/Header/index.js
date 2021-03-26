@@ -17,7 +17,7 @@ function Header({ lang, setLang }) {
                 />
             </div>
             <section className="App-title-container">
-                <h1 className="App-person-title">Laurio Pasaka</h1>
+                <h1 className="App-person-title">Laurynas Stačkūnas</h1>
                 <h3 className="App-person-prof">{translations[lang].profession}</h3>
             </section>
         </header>

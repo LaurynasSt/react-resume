@@ -8,8 +8,6 @@ export default {
                 { link: "https://lt.linkedin.com/", imgSrc: "https://static.jopwell.com/organizationevent/fKM12af7a73b43884bf316ee670f94a30/LinkedIn-Logo.png", imgAlt: "linkedin", text: "LINKEDIN/none" },
                 { link: "https://twitter.com/?lang=en", imgSrc: "https://1000logos.net/wp-content/uploads/2017/06/Logo-Twitter.jpg", imgAlt: "twitter", text: "TWITTER/none" },
                 { link: "https://github.com/", imgSrc: "https://www.flaticon.com/svg/static/icons/svg/38/38401.svg", imgAlt: "github", text: "GITHUB/orezdrah" },
-                { link: "https://pornhub.com/", imgSrc: "https://image.flaticon.com/icons/png/512/60/60736.png", imgAlt: "blog", text: "BLOG/none" }
-
             ]
         },
         aboutMe: {
@@ -19,8 +17,8 @@ export default {
         education: {
             educationTitle: "Education",
             schools: [
-                { schools: "SCHOOL NAME", years: "2009 - 2013", degree: "degree" },
-                { schools: "SCHOOL NAME", years: "2009 - 2013", degree: "degree" }
+                { schools: "CodeAcademy", years: "2020 - 2020", degree: "Full-Stack JavaScript & PHP Developer" },
+                { schools: "SCHOOL NAME", years: "2021 - 2021", degree: "React.js" }
             ]
         },
         personalSkills: {
@@ -80,15 +78,15 @@ export default {
             {
                 title: "Address",
                 items: [
-                    { text: "Vilniaus g. 52." },
+                    { text: "Jonažolių g. 9-30" },
                     { text: "Vilnius, Lithuania" }
                 ]
             },
             {
                 title: "Contacts",
                 items: [
-                    { link: "tel:+370600000000", text: "+370600000000" },
-                    { link: "mailto:orez@orez.com", text: "orez@orez.com" }
+                    { link: "tel:+37068808884", text: "+37068808884" },
+                    { link: "mailto:l.stackunas@gmail.com", text: "l.stackunas@gmail.com" }
                 ]
             },
             {
@@ -108,8 +106,6 @@ export default {
                 { link: "https://lt.linkedin.com/", imgSrc: "https://static.jopwell.com/organizationevent/fKM12af7a73b43884bf316ee670f94a30/LinkedIn-Logo.png", imgAlt: "linkedin", text: "LINKEDIN/none" },
                 { link: "https://twitter.com/?lang=en", imgSrc: "https://1000logos.net/wp-content/uploads/2017/06/Logo-Twitter.jpg", imgAlt: "twitter", text: "TWITTER/none" },
                 { link: "https://github.com/", imgSrc: "https://www.flaticon.com/svg/static/icons/svg/38/38401.svg", imgAlt: "github", text: "GITHUB/orezdrah" },
-                { link: "https://pornhub.com/", imgSrc: "https://image.flaticon.com/icons/png/512/60/60736.png", imgAlt: "blog", text: "BLOGAS/none" }
-
             ]
         },
         aboutMe: {
@@ -126,7 +122,7 @@ export default {
         personalSkills: {
             title: "Asmeninės Savybės",
             skills: [
-                { text: "TKomandiškumas", level: "green" },
+                { text: "Komandiškumas", level: "green" },
                 { text: "Komunikacija", level: "yellow" },
                 { text: "Organizavimas", level: "brown" },
                 { text: "Lyderystė" }
@@ -180,15 +176,15 @@ export default {
             {
                 title: "Adresas",
                 items: [
-                    { text: "Vilniaus g. 52." },
+                    { text: "Jonažolių g. 9-30" },
                     { text: "Vilnius, Lithuania" }
                 ]
             },
             {
                 title: "Kontaktai",
                 items: [
-                    { link: "tel:+370600000000", text: "+370600000000" },
-                    { link: "mailto:orez@orez.com", text: "orez@orez.com" }
+                    { link: "tel:+37068808884", text: "+37068808884" },
+                    { link: "mailto:l.stackunas@gmail.com", text: "l.stackunas@gmail.com" }
                 ]
             },
             {
