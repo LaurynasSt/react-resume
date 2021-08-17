@@ -54,7 +54,7 @@ export default {
                     title: "Self employed in Malta",
                     company: "-",
                     years: "2018 - 2020",
-                    description: "Seassoned works.",
+                    description: "Seasonal works.",
                 },
                 {
                     title: "Logistics warehouse manager",
