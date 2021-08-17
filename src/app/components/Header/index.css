@@ -1,37 +1,47 @@
 .App-header {
-    position: relative;
-    padding-bottom: 200px;
+  position: relative;
+  padding-bottom: 200px;
 }
 
 .App-header-line {
-    height: 61px;
-    background-color: #7ABCAC;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 20px;
+  height: 61px;
+  background-color: #7abcac;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
 }
 
 .App-title-container {
-    position: absolute;
-    width: 580px;
-    margin: 0 auto;
-    border: 3px solid black;
-    text-align: center;
-    padding: 30px;
-    top: 30px;
-    left: 50%;
-    transform: translate(-50%);
+  position: absolute;
+  width: 580px;
+  margin: 0 auto;
+  border: 3px solid black;
+  text-align: center;
+  padding: 30px;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .App-person-title {
-    margin: 20px;
-    font-size: 35px;
+  margin: 20px;
+  font-size: 35px;
 }
 
 .App-person-prof {
-    background-color: black;
-    color: white;
-    width: 240px;
-    margin: 0 auto;
+  background-color: black;
+  padding: 6px;
+  color: white;
+  width: 240px;
+  margin: 0 auto;
+}
+
+.App-header-picture {
+  width: 100px;
+  height: 124px;
+  object-fit: contain;
+  position: absolute;
+  top: 80px;
+  left: -4px;
 }

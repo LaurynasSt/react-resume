@@ -1,25 +1,37 @@
 .App-job-title-container {
-    text-align: center;
-    margin: 20px 0;
-  }
-  
+  text-align: center;
+  margin: 20px 0;
+}
+
+.App-job-title {
+  font-weight: 700;
+  font-size: 16px;
+}
+
 .App-job-company {
-    margin: 5px 0;
+  margin: 5px 0;
+  font-weight: 500;
+  font-size: 16px;
 }
-  
+
+.App-job-years {
+  font-weight: 500;
+  font-size: 16px;
+}
+
 .App-experience-card {
-    padding: 20px;
-    margin-top: 20px;
+  padding: 20px;
+  margin-top: 20px;
 }
-  
+
 .App-experience-card:first-child {
-    border-right: 4px solid silver;
+  border-right: 4px solid silver;
 }
-  
+
 .App-experience-card:last-child {
-    border-left: 4px solid silver;
+  border-left: 4px solid silver;
 }
-  
+
 .App-occupation {
-    margin: 20px;
-}  
+  margin: 20px;
+}

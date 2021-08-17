@@ -5,20 +5,20 @@ export default {
         personalLinks: {
             title: "Links",
             links: [
-                { link: "https://lt.linkedin.com/", imgSrc: "https://static.jopwell.com/organizationevent/fKM12af7a73b43884bf316ee670f94a30/LinkedIn-Logo.png", imgAlt: "linkedin", text: "LINKEDIN/none" },
-                { link: "https://twitter.com/?lang=en", imgSrc: "https://1000logos.net/wp-content/uploads/2017/06/Logo-Twitter.jpg", imgAlt: "twitter", text: "TWITTER/none" },
-                { link: "https://github.com/", imgSrc: "https://www.flaticon.com/svg/static/icons/svg/38/38401.svg", imgAlt: "github", text: "GITHUB/orezdrah" },
+                { link: "https://linkedin.com/in/laurynas-stačkūnas-4504aa204", imgSrc: "https://static.jopwell.com/organizationevent/fKM12af7a73b43884bf316ee670f94a30/LinkedIn-Logo.png", imgAlt: "linkedin", text: "LINKEDIN/Laurynas-Stackunas" },
+                { link: "https://github.com/", imgSrc: "https://www.flaticon.com/svg/static/icons/svg/38/38401.svg", imgAlt: "github", text: "GITHUB/LaurynasSt" },
+
             ]
         },
         aboutMe: {
             title: "About Me",
-            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            text: "I am a full-stack web developer, passionate about building websites and web applications. I specialize in JavaScript and PHP and have experience working with React.js and TypeScript. I also love trying out new technologies. I am currently improving my programming knowledge myself.",
         },
         education: {
             educationTitle: "Education",
             schools: [
                 { schools: "CodeAcademy", years: "2020 - 2020", degree: "Full-Stack JavaScript & PHP Developer" },
-                { schools: "SCHOOL NAME", years: "2021 - 2021", degree: "React.js" }
+                { schools: "CodeAcademy", years: "2021 - 2021", degree: "React.js" }
             ]
         },
         personalSkills: {
@@ -27,7 +27,7 @@ export default {
                 { text: "Teamwork", level: "green" },
                 { text: "Communication", level: "yellow" },
                 { text: "Organisation", level: "brown" },
-                { text: "Leadership" }
+                { text: "Leadership", level: "blue" }
             ],
         },
         technicalSkills: {
@@ -37,40 +37,30 @@ export default {
                 { text: "CSS/SCSS", level: "green" },
                 { text: "PHP", level: "brown" },
                 { text: "JavaScript", level: "yellow" },
-                { text: "React.js", level: "yellow" }],
+                { text: "React.js", level: "yellow" },
+                { text: "TypeScript", level: "blue" }
+            ],
         },
         workExperience: {
             title: "Work Experience",
             work: [
                 {
-                    title: "JOB POSITION",
-                    company: "Company",
-                    years: "2018 - present",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                    workAchievments: [
-                        "labas",
-                        "ate"
-                    ]
+                    title: "React.js Developer",
+                    company: "UniTrade",
+                    years: "2021 - 2021(6months temporary job)",
+                    description: "Creating new components, using React TypeScript. Adding styles from FIGMA, using react-styled-components.",
                 },
                 {
-                    title: "JOB POSITION",
-                    company: "Company",
-                    years: "2018 - present",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                    workAchievments: [
-                        "hello",
-                        "bye bye"
-                    ]
+                    title: "Self employed in Malta",
+                    company: "-",
+                    years: "2018 - 2020",
+                    description: "Seassoned works.",
                 },
                 {
-                    title: "JOB POSITION",
-                    company: "Company",
-                    years: "2018 - present",
-                    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                    workAchievments: [
-                        "kebabas",
-                        "labas"
-                    ]
+                    title: "Logistics warehouse manager",
+                    company: "UAB Sakalas",
+                    years: "2015 - 2018",
+                    description: "Processing orders, organising the dispatch and delivery of goods, ensuring goods are stored safely, keeping staff fully trained, maintaining health and safety standarts, keeping accurate records, managing timesheets.",
                 },
             ]
         },
@@ -92,8 +82,7 @@ export default {
             {
                 title: "Social",
                 items: [
-                    { link: "https://linkedin.com/", text: "LINKEDIN/orezdrah" },
-                    { link: "https://twitter.com/", text: "TWITTER/orezdrah" }
+                    { link: "https://linkedin.com/", text: "LINKEDIN/orezdrah" }
                 ]
             },
         ]
@@ -104,19 +93,19 @@ export default {
             title: "Nuorodos",
             links: [
                 { link: "https://lt.linkedin.com/", imgSrc: "https://static.jopwell.com/organizationevent/fKM12af7a73b43884bf316ee670f94a30/LinkedIn-Logo.png", imgAlt: "linkedin", text: "LINKEDIN/none" },
-                { link: "https://twitter.com/?lang=en", imgSrc: "https://1000logos.net/wp-content/uploads/2017/06/Logo-Twitter.jpg", imgAlt: "twitter", text: "TWITTER/none" },
-                { link: "https://github.com/", imgSrc: "https://www.flaticon.com/svg/static/icons/svg/38/38401.svg", imgAlt: "github", text: "GITHUB/orezdrah" },
+                { link: "https://github.com/", imgSrc: "https://www.flaticon.com/svg/static/icons/svg/38/38401.svg", imgAlt: "github", text: "GITHUB/LaurynasSt" },
+
             ]
         },
         aboutMe: {
             title: "Apie Mane",
-            text: "LT Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            text: "Aš esu a full-stack žiniatiklio programuotojas, besidomintis svetainių ir web aplikacijų kūrimu. Aš specializuojuosi JavaScript ir PHP, bei turiu patirties dirbant su React.js. Man taip pat patinka išbandyti naujas technologijas. Šiuo metu savarankiškai tobulinu programavimo žinias.",
         },
         education: {
             educationTitle: "Išsilavinimas",
             schools: [
-                { schools: "SCHOOL NAME", years: "2009 - 2013", degree: "degree" },
-                { schools: "SCHOOL NAME", years: "2009 - 2013", degree: "degree" }
+                { schools: "CodeAcademy", years: "2020 - 2020", degree: "Full-Stack JavaScript & PHP Programuotojas" },
+                { schools: "CodeAcademy", years: "2021 - 2021", degree: "React.js" }
             ]
         },
         personalSkills: {
@@ -125,7 +114,7 @@ export default {
                 { text: "Komandiškumas", level: "green" },
                 { text: "Komunikacija", level: "yellow" },
                 { text: "Organizavimas", level: "brown" },
-                { text: "Lyderystė" }
+                { text: "Lyderystė", level: "blue" }
             ],
         },
         technicalSkills: {
@@ -135,40 +124,30 @@ export default {
                 { text: "CSS/SCSS", level: "green" },
                 { text: "PHP", level: "brown" },
                 { text: "JavaScript", level: "yellow" },
-                { text: "React.js", level: "yellow" }],
+                { text: "React.js", level: "yellow" },
+                { text: "TypeScript", level: "blue" }
+            ],
         },
         workExperience: {
             title: "Darbo Patirtis",
             work: [
                 {
-                    title: "JOB POSITION",
-                    company: "Company",
-                    years: "2018 - present",
-                    description: "LT Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                    workAchievments: [
-                        "labas",
-                        "ate"
-                    ]
+                    title: "React.js Programuotojas",
+                    company: "UniTrade",
+                    years: "2021 - 2021(6men. laikinas darbas)",
+                    description: "Kuriami komponentai naudojant React TypeScript. Pritaikomas stilius iš FIGMA platformos naudojant react-styled-components.",
                 },
                 {
-                    title: "JOB POSITION",
-                    company: "Company",
-                    years: "2018 - present",
-                    description: "LT Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                    workAchievments: [
-                        "hello",
-                        "bye bye"
-                    ]
+                    title: "Darbas Maltoje",
+                    company: "-",
+                    years: "2018 - 2020",
+                    description: "Sezoninis darbas.",
                 },
                 {
-                    title: "JOB POSITION",
-                    company: "Company",
-                    years: "2018 - present",
-                    description: "LT Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                    workAchievments: [
-                        "kebabas",
-                        "labas"
-                    ]
+                    title: "Vadybininkas",
+                    company: "UAB Sakalas",
+                    years: "2015 - 2018",
+                    description: "Užsakymų valdymas, prekių ir medžiagų sandėliavimo planavimas ir paskirstymas, darbų atlikimo grafiko sudarymas, sveikatos ir saugos standartų palaikymas, darbuotojų apmokymų užtikrinimas.",
                 },
             ]
         },
@@ -190,8 +169,7 @@ export default {
             {
                 title: "Socialiniai tinklai",
                 items: [
-                    { link: "https://linkedin.com/", text: "LINKEDIN/orezdrah" },
-                    { link: "https://twitter.com/", text: "TWITTER/orezdrah" }
+                    { link: "https://linkedin.com/", text: "LINKEDIN/orezdrah" }
                 ]
             },
         ]

@@ -1,9 +1,10 @@
 import ContentBlock from "../ContentBlock";
 import Link from "../Link";
-import List from "../List";
 import Pill from "../Pill";
 import JobExperience from "../JobExperience";
 import Divider from "../Divider";
+import FullStackPDF from "../../../assets/pdfs/degree_full_stack.pdf";
+import ReactPDF from "../../../assets/pdfs/degree_react.pdf";
 
 import translations from "../../translations";
 
@@ -36,11 +37,11 @@ function Main({ lang }) {
         <ContentBlock title={translations[lang].education.educationTitle} className="App-skills">
           {translations[lang].education.schools.map(({ schools, years, degree }, index, array) => {
             return <Fragment>
-              <p className="App-educ-inner-text">
+              <a className="App-educ-inner-text" href={index === 0 ? FullStackPDF : ReactPDF} target="_blank">
                 {schools}<br />
                 {years}<br />
                 {degree}
-              </p>
+              </a>
               {index !== array.length - 1 && <Divider isShort />}
             </Fragment>
           })}
@@ -57,18 +58,13 @@ function Main({ lang }) {
         </ContentBlock>
       </section>
       <ContentBlock title={translations[lang].workExperience.title} className="App-experience-container">
-        {translations[lang].workExperience.work.map(({ title, company, years, description, workAchievments }) => {
+        {translations[lang].workExperience.work.map(({ title, company, years, description }) => {
           return <JobExperience
             title={title}
             company={company}
             years={years}
             description={description}
           >
-            <List
-              list={
-                workAchievments
-              }
-            />
           </JobExperience>
         })}
       </ContentBlock>

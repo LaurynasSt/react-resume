@@ -1,4 +1,5 @@
 import Select from "./components/Select";
+import ProfilePicture from "../../../assets/img/profile_picture.jpg";
 
 import translations from "../../translations";
 
@@ -8,6 +9,7 @@ function Header({ lang, setLang }) {
 
     return (
         <header className="App-header">
+            <img src={ProfilePicture} alt="profile" className="App-header-picture" />
             <div className="App-header-line">
                 <Select onChange={setLang}
                     options={[

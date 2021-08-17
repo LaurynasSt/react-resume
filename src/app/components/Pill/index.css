@@ -1,36 +1,37 @@
 .skill {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
-.skill>span {
-    font-size: 13px;
+.skill > span {
+  font-size: 15px;
+}
+
+.skill-margin {
+  margin: 0 0 20px 0;
+}
+
+.pill {
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 15px;
 }
 
 .pill-green {
-    background-color: #7ABCAC;
-    font-weight: bold;
-    padding: 3px;
-    border-radius: 15px;
+  background-color: #7abcac;
 }
 
 .pill-yellow {
-    background-color: #D8DA79;
-    font-weight: bold;
-    margin: 20px 0;
-    padding: 3px;
-    border-radius: 15px;
+  background-color: #d8da79;
 }
 
 .pill-brown {
-    background-color: #C29486;
-    font-weight: bold;
-    padding: 3px;
-    border-radius: 15px;
+  background-color: #c29486;
 }
 
 .pill-grey {
-    background-color: #a19d9c;
-    font-weight: bold;
-    padding: 3px;
-    border-radius: 15px;
+  background-color: #a19d9c;
+}
+
+.pill-blue {
+  background-color: #2f7ac6;
 }

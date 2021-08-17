@@ -6,7 +6,7 @@ function JobExperience({ title = "", company = "", years = "", description = "",
             <div className="App-job-title-container">
                 <h5 className="App-job-title">{title}</h5>
                 <p className="App-job-company">{company}</p>
-                <p>{years}</p>
+                <p className="App-job-years">{years}</p>
             </div>
             <p className="App-job-descr">
                 {description}
