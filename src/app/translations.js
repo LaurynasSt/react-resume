@@ -99,7 +99,7 @@ export default {
         },
         aboutMe: {
             title: "Apie Mane",
-            text: "Aš esu a full-stack žiniatiklio programuotojas, besidomintis svetainių ir web aplikacijų kūrimu. Aš specializuojuosi JavaScript ir PHP, bei turiu patirties dirbant su React.js. Man taip pat patinka išbandyti naujas technologijas. Šiuo metu savarankiškai tobulinu programavimo žinias.",
+            text: "Aš esu full-stack žiniatiklio programuotojas, besidomintis svetainių ir web aplikacijų kūrimu. Aš specializuojuosi JavaScript ir PHP, bei turiu patirties dirbant su React.js. Man taip pat patinka išbandyti naujas technologijas. Šiuo metu savarankiškai tobulinu programavimo žinias.",
         },
         education: {
             educationTitle: "Išsilavinimas",
